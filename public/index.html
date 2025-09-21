@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FusionERP | AI-Powered Workflow Tools</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">
+        <span class="logo">FusionERP</span>
+      </div>
+      <nav>
+        <a href="#plans">Plans</a>
+        <a href="#features">Features</a>
+        <a href="#assistant">AI Agent</a>
+      </nav>
+      <a class="cta" href="#assistant">Talk to an expert</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Launch AI-driven tools your teams will love.</h1>
+          <p>
+            FusionERP combines real-time intelligence, effortless templates, and
+            enterprise-ready integrations to accelerate every workflow.
+          </p>
+          <div class="hero__actions">
+            <a class="btn primary" href="#plans">Compare plans</a>
+            <a class="btn secondary" href="#assistant">Ask the AI agent</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="highlight-card">
+            <h3>Real-time insights</h3>
+            <p>
+              Monitor project health, user engagement, and approvals in a single
+              unified dashboard.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <h3>Instant setup</h3>
+            <p>
+              Drag-and-drop templates help you launch new tools and workflows in
+              minutes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Everything you need to deliver results</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Real-time tracking</h3>
+            <p>
+              Stay ahead with instant notifications across approvals, campaign
+              launches, and executive updates.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Analytics that guide action</h3>
+            <p>
+              Visualize performance trends and drill into the data that keeps
+              your teams aligned.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Connected ecosystem</h3>
+            <p>
+              Integrate HRMS, Salesforce, Zapier, and more without rebuilding
+              your existing stack.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="plans" class="plans">
+        <h2>Choose the plan that matches your momentum</h2>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-label">Essentials</div>
+            <h3>$19 USD</h3>
+            <p class="billing">Seat per month · 2 seats max</p>
+            <p class="note">No credit card required</p>
+            <ul>
+              <li>Real-time tracking & notifications</li>
+              <li>Real-time analytics</li>
+              <li>Drag-and-drop templates</li>
+              <li>Project Management</li>
+              <li>24/7 email and chat support</li>
+            </ul>
+          </article>
+
+          <article class="plan-card popular">
+            <div class="plan-label">Popular · Business</div>
+            <h3>$12 USD</h3>
+            <p class="billing">Seat cost per month</p>
+            <p class="note">No credit card required</p>
+            <ul>
+              <li>Everything in Essentials</li>
+              <li>HRMS and Zapier integrations</li>
+              <li>Content reporting</li>
+              <li>Unlimited team workspaces</li>
+              <li>Approval workflows</li>
+              <li>Salesforce integration*</li>
+            </ul>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-label">Enterprise</div>
+            <h3>Let’s talk</h3>
+            <p class="billing">Per-seat or per-tool pricing</p>
+            <p class="note">Respond within 24 hrs max</p>
+            <ul>
+              <li>Everything in Business</li>
+              <li>Unlimited file uploads</li>
+              <li>Real-time tracking & notifications</li>
+              <li>User performance analytics</li>
+              <li>SSO support & custom user roles</li>
+              <li>Bulk send & Forms*</li>
+            </ul>
+          </article>
+        </div>
+        <p class="fine-print">*Available on request.</p>
+      </section>
+
+      <section id="assistant" class="assistant">
+        <div class="assistant__intro">
+          <h2>Meet the FusionERP AI agent</h2>
+          <p>
+            Ask anything about pricing, integrations, or how to get started. Our
+            OpenAI-powered expert responds in real time.
+          </p>
+        </div>
+        <div class="assistant__panel">
+          <div class="chat-window" id="chatWindow">
+            <div class="message bot">
+              <span class="sender">FusionERP AI</span>
+              <p>Hi! How can I help you streamline your tooling today?</p>
+            </div>
+          </div>
+          <form id="chatForm" class="chat-form">
+            <label for="userMessage" class="sr-only">Message</label>
+            <textarea
+              id="userMessage"
+              name="userMessage"
+              rows="2"
+              placeholder="Type your question..."
+              required
+            ></textarea>
+            <button type="submit" class="btn primary">Send</button>
+          </form>
+          <p class="disclaimer">
+            Responses are generated by AI. For enterprise pricing or data
+            requirements, we’ll connect you with our sales team.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="currentYear"></span> FusionERP. All rights reserved.</p>
+      <a href="mailto:hello@fusionerp.com">hello@fusionerp.com</a>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
